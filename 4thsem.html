@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA</title>
+    <link rel="stylesheet" href="physicscycle.css">
+</head>
+<body>
+    <a href="sgpa.html">
+    <button id="pbtn">Back</button>
+    </a>
+    <div>
+        <h1 class="phead">4th Semester(Enter obtained grade point)</h1>
+    </div>
+        <div id="pul">
+          <input type="number" class="color" id="math" placeholder="18MAT41"><br><br>
+          <input type="number" class="color" id="DAA" placeholder="18XX42"><br><br>
+          <input type="number" class="color" id="OS" placeholder="18XX43"><br><br>
+          <input type="number" class="color" id="MES" placeholder="18XX44"><br><br>
+          <input type="number" class="color" id="OOC" placeholder="18XX45"><br><br>
+          <input type="number" class="color" id="DC" placeholder="18XX46"><br><br>
+          <input type="number" class="color" id="DAAL" placeholder="18XXL47"><br><br>
+          <input type="number" class="color" id="MESL" placeholder="18XXL48"><br><br>
+          <input type="number" class="color" id="KANNADA" placeholder="18KVK49/49"><br><br>
+           </div>
+           <button onclick="calculate()" class="pbtn1">Calculate your SGPA</button>
+           <p id="demo"></p>
+
+           <script>
+            function calculate() {
+                // let MAT, PHY, ELE, CIV, EGDL, PHYL, ELEL, EGDLL;
+                // MAT1 = 4;
+                // PHY1 = 4;
+                // ELE1 = 3
+                // CIV1 = 3
+                // EGDL1 = 3
+                // PHYL1 = 1;
+                // ELELAB1 = 1;
+                // EGDLLABL1 = 1;
+    
+                let math = document.getElementById('math').value;
+                let DAA= document.getElementById('DAA').value;
+                let OS= document.getElementById('OS').value;
+                let MES= document.getElementById('MES').value;
+                let OOC= document.getElementById('OOC').value;
+                let DC= document.getElementById('DC').value;
+                let DAAL= document.getElementById('DAAL').value;
+                let MESL= document.getElementById('MESL').value;
+                let KANNADA= document.getElementById('KANNADA').value;
+    
+                // const total = parseFloat(m1) + parseFloat(phy) + parseFloat(ele) + parseFloat(civ) + parseFloat(egdl) + parseFloat(phylab) + parseFloat(elelab) + parseFloat(egdllab);
+    
+                const sgpa = 3 * parseFloat(math) + 4 * parseFloat(DAA) + 3 * parseFloat(OS) + 3 * parseFloat(MES) + 3 * parseFloat(OOC) + 3 * parseFloat(DC) + 2 * parseFloat(DAAL) + 2 * parseFloat(MESL)+1 * parseFloat(KANNADA)
+    
+                const sgpa2 = sgpa / 24;
+                document.getElementById("demo").innerHTML = sgpa2;
+            }
+    
+        </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA</title>
+    <link rel="stylesheet" href="physicscycle.css">
+</head>
+<body>
+    <a href="sgpa.html">
+    <button id="pbtn">Back</button>
+    </a>
+    <div>
+        <h1 class="phead">5th Semester(Enter obtained grade point)</h1>
+    </div>
+        <div id="pul">
+          <input type="number" class="color" id="ME" placeholder="18XX51"><br><br>
+          <input type="number" class="color" id="CN" placeholder="18XX52"><br><br>
+          <input type="number" class="color" id="DBMS" placeholder="18XX53"><br><br>
+          <input type="number" class="color" id="ATC" placeholder="18XX54"><br><br>
+          <input type="number" class="color" id="PYTHON" placeholder="18XX55"><br><br>
+          <input type="number" class="color" id="UNIX" placeholder="18XX56"><br><br>
+          <input type="number" class="color" id="CNL" placeholder="18XXL57"><br><br>
+          <input type="number" class="color" id="DBMSL" placeholder="18XXL58"><br><br>
+          <input type="number" class="color" id="EVN" placeholder="18CIV59"><br><br>
+        </div>
+           <button onclick="calculate()" class="pbtn1">Calculate your SGPA</button>
+           <p id="demo"></p>
+
+           <script>
+            function calculate() {
+                // let MAT, PHY, ELE, CIV, EGDL, PHYL, ELEL, EGDLL;
+                // MAT1 = 4;
+                // PHY1 = 4;
+                // ELE1 = 3
+                // CIV1 = 3
+                // EGDL1 = 3
+                // PHYL1 = 1;
+                // ELELAB1 = 1;
+                // EGDLLABL1 = 1;
+    
+                let ME = document.getElementById('ME').value;
+                let CN = document.getElementById('CN').value;
+                let DBMS  = document.getElementById('DBMS').value;
+                let ATC = document.getElementById('ATC').value;
+                let  PYTHON= document.getElementById('PYTHON').value;
+                let UNIX = document.getElementById('UNIX').value;
+                let CNL = document.getElementById('CNL').value;
+                let DBMSL = document.getElementById('DBMSL').value;
+                let EVN = document.getElementById('EVN').value;
+    
+                // const total = parseFloat(m1) + parseFloat(phy) + parseFloat(ele) + parseFloat(civ) + parseFloat(egdl) + parseFloat(phylab) + parseFloat(elelab) + parseFloat(egdllab);
+    
+                const sgpa = 3 * parseFloat(ME) + 4 * parseFloat(CN) + 4 * parseFloat(DBMS) + 3 * parseFloat(ATC) + 3 * parseFloat(PYTHON) + 3 * parseFloat(UNIX) + 2 * parseFloat(CNL) + 2 * parseFloat(DBMSL) + 1 * parseFloat(EVN);
+    
+                const sgpa2 = sgpa/25;
+                document.getElementById("demo").innerHTML = sgpa2;
+            }
+    
+        </script>
+
+    
+</body>
+</html>

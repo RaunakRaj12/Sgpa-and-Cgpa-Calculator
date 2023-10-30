@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA</title>
+    <link rel="stylesheet" href="physicscycle.css">
+</head>
+<body>
+    <a href="sgpa.html">
+    <button id="pbtn">Back</button>
+    </a>
+    <div>
+        <h1 class="phead">3rd Semester(Enter obtained grade point)</h1>
+    </div>
+        <div id="pul">
+          <input type="number" class="color" id="math" placeholder="18MAT31"><br><br>
+          <input type="number" class="color" id="DS" placeholder="18XX32"><br><br>
+          <input type="number" class="color" id="ADE" placeholder="18XX33"><br><br>
+          <input type="number" class="color" id="CO" placeholder="18XX34"><br><br>
+          <input type="number" class="color" id="SE" placeholder="18XX35"><br><br>
+          <input type="number" class="color" id="DMS" placeholder="18XX36"><br><br>
+          <input type="number" class="color" id="ADEL" placeholder="18XXL37"><br><br>
+          <input type="number" class="color" id="DSL" placeholder="18XXL38"><br><br>
+          <input type="number" class="color" id="CONSTITUTION" placeholder="18CPC39/49"><br><br>
+           </div>
+           <button onclick="calculate()" class="pbtn1">Calculate your SGPA</button>
+           <p id="demo"></p>
+           <script>
+            function calculate() {
+                   
+                let math = document.getElementById('math').value;
+                let DS= document.getElementById('DS').value;
+                let ADE = document.getElementById('ADE').value;
+                let CO = document.getElementById('CO').value;
+                let SE= document.getElementById('SE').value;
+                let DMS= document.getElementById('DMS').value;
+                let ADEL= document.getElementById('ADEL').value;
+                let DSL = document.getElementById('DSL').value;
+                let CONSTITUTION = document.getElementById('CONSTITUTION').value;
+    
+                // const total = parseFloat(m1) + parseFloat(phy) + parseFloat(ele) + parseFloat(civ) + parseFloat(egdl) + parseFloat(phylab) + parseFloat(elelab) + parseFloat(egdllab);
+    
+                const sgpa = 3 * parseFloat(math) + 4* parseFloat(DS) + 3 * parseFloat(ADE) + 3 * parseFloat(CO) + 3 * parseFloat(SE) + 3 * parseFloat(DMS) + 2 * parseFloat(ADEL) + 2 * parseFloat(DSL) +1 * parseFloat(CONSTITUTION)
+    
+                const sgpa2 = sgpa / 24;
+                document.getElementById("demo").innerHTML = sgpa2;
+            }
+    
+        </script>
+</body>
+</html>

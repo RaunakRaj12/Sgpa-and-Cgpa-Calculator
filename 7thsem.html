@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA</title>
+    <link rel="stylesheet" href="physicscycle.css">
+</head>
+<body>
+    <a href="sgpa.html">
+    <button id="pbtn">Back</button>
+    </a>
+    <div>
+        <h1 class="phead">7th Semester(Enter obtained grade point)</h1>
+    </div>
+        <div id="pul">
+          <input type="number" class="color" id="AIML" placeholder="18CS71"><br><br>
+          <input type="number" class="color" id="BDA" placeholder="18CS72"><br><br>
+          <input type="number" class="color" id="UID" placeholder="18CS73X"><br><br>
+          <input type="number" class="color" id="NM" placeholder="18CS74X"><br><br>
+          <input type="number" class="color" id="EPM" placeholder="18CS75X"><br><br>
+          <input type="number" class="color" id="AIMLL" placeholder="18CSL76"><br><br>
+          <input type="number" class="color" id="PROJECT" placeholder="18CSP77"><br><br>
+        </div>
+           <button onclick="calculate()" class="pbtn1">Calculate your SGPA</button>
+           <p id="demo"></p>
+
+           <script>
+            function calculate() {
+                    
+                let AIML = document.getElementById('AIML').value;
+                let BDA = document.getElementById('BDA').value;
+                let UID = document.getElementById('UID').value;
+                let NM = document.getElementById('NM').value;
+                let EPM = document.getElementById('EPM').value;
+                let AIMLL = document.getElementById('AIMLL').value;
+                let PROJECT = document.getElementById('PROJECT').value;
+    
+                // const total = parseFloat(m1) + parseFloat(phy) + parseFloat(ele) + parseFloat(civ) + parseFloat(egdl) + parseFloat(phylab) + parseFloat(elelab) + parseFloat(egdllab);
+    
+                const sgpa = 4 * parseFloat(AIML) + 4 * parseFloat(BDA) + 3 * parseFloat(UID) + 3 * parseFloat(NM) + 3 * parseFloat(EPM) + 2 * parseFloat(AIMLL) + 1 * parseFloat(PROJECT);
+    
+                const sgpa2 = sgpa / 20;
+                document.getElementById("demo").innerHTML = sgpa2;
+            }
+    
+        </script>
+
+    
+</body>
+</html>

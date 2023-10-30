@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA</title>
+    <link rel="stylesheet" href="physicscycle.css">
+</head>
+<body>
+    <a href="sgpa.html">
+    <button id="pbtn">Back</button>
+    </a>
+    <div>
+        <h1 class="phead">chemistry Cycle(Enter obtained grade point)</h1>
+    </div>
+        <div id="pul">
+          <input type="number" class="color" id="math" placeholder="18MAT11/21"><br><br>
+          <input type="number" class="color" id="chemistry" placeholder="18CHE12/22"><br><br>
+          <input type="number" class="color" id="Cprogramming" placeholder="1CPS13/23"><br><br>
+          <input type="number" class="color" id="electronics" placeholder="18ELN14/24"><br><br>
+          <input type="number" class="color" id="mechanical" placeholder="18ME15/25"><br><br>
+          <input type="number" class="color" id="chemistrylab" placeholder="18CHEL16/26"><br><br>
+          <input type="number" class="color" id="CPROGRAMMINGlab" placeholder="18CPL17/27"><br><br>
+          <input type="number" class="color" id="english" placeholder="18EGH18/28"><br><br>
+          </div>
+           <button onclick="calculate()" class="pbtn1">Calculate your SGPA</button>
+        <p id="demo"></p>
+           <script>
+            function calculate() {
+                   
+                let math= document.getElementById('math').value;
+                let chemistry= document.getElementById('chemistry').value;
+                let Cprogramming= document.getElementById('Cprogramming').value;
+                let electronics= document.getElementById('electronics').value;
+                let mechanical= document.getElementById('mechanical').value;
+                let chemistrylab= document.getElementById('chemistrylab').value;
+                let CPROGRAMMINGlab= document.getElementById('CPROGRAMMINGlab').value;
+                let english= document.getElementById('english').value;
+                
+                // const total = parseFloat(m1) + parseFloat(phy) + parseFloat(ele) + parseFloat(civ) + parseFloat(egdl) + parseFloat(phylab) + parseFloat(elelab) + parseFloat(egdllab);
+    
+                const sgpa = 3 * parseFloat(math) + 4* parseFloat(chemistry) + 3 * parseFloat(Cprogramming) + 3 * parseFloat(electronics) + 3 * parseFloat(mechanical) + 3 * parseFloat(chemistrylab) + 2 * parseFloat(CPROGRAMMINGlab) + 2 * parseFloat(english);v
+    
+                const sgpa2 = sgpa / 24;
+                document.getElementById("demo").innerHTML = sgpa2;
+            }
+    
+        </script>
+</body>
+</html>

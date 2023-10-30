@@ -1,0 +1,71 @@
+#page{
+    padding:100px;
+    width: 840px;
+    text-align:center;
+    margin: auto;
+    
+   }
+
+body{
+    background: url('lab3.jpg');
+    background-size: cover;
+    background-position: 0px -65px;
+    backdrop-filter: 100%;
+}
+.c11{
+    color: yellow;
+}
+.c12{
+    color: red;
+}
+#c1{
+    font-size: 3rem;
+    display: block; 
+}
+.text{
+    font-size: xx-large;
+    color: rgb(252, 180, 180);
+}
+.link{
+     padding: 10px 24px;
+
+}
+.line{
+    text-decoration: none;
+    padding: 10px;
+    margin: 6px;
+    cursor: pointer;
+    font-size: x-large;
+    border-radius:10px ;
+    color: yellow;
+    border: solid rgb(130, 79, 79);
+    background-color: rgb(113, 121, 169);
+    transition: all 0.2s ease-in-out;
+}
+a:hover{
+    background-color: rgb(166, 213, 71);
+    transform: scale(2);
+    color: black;
+    
+}
+button:hover{
+    background-color:rgb(103 151 147);
+    color: black;
+    
+}
+#header{
+    border: solid rgb(130, 79, 79);
+    background-color: crimson;
+    padding: 5px 20px;
+    margin: 2px;
+    font-size: larger;
+    display: inline;
+    position: absolute;
+}
+.head1{
+    transition: all 0.2s ease-in;
+    color: yellow;
+    text-decoration: none;
+    margin: 10px;
+   
+}

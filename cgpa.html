@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA</title>
+    <link rel="stylesheet" href="physicscycle.css">
+</head>
+<body>
+    <a href="frontpg.html">
+    <button id="pbtn">Back</button>
+    </a>
+    <div>
+        <h1 class="phead">CGPA Calculator</h1>
+    </div>
+        <div id="pul">
+          <input type="number" class="color" id="FIRSTSEM" placeholder="1st Semester SGPA"><br><br>
+          <input type="number" class="color" id="SECONDSEM" placeholder="2nd Semester SGPA"><br><br>
+          <input type="number" class="color" id="THIRDSEM" placeholder="3rd Semester SGPA"><br><br>
+          <input type="number" class="color" id="FOURTHSEM" placeholder="4th Semester SGPA"><br><br>
+          <input type="number" class="color" id="FIFTHSEM" placeholder="5th Semester SGPA"><br><br>
+          <input type="number" class="color" id="SIXTHSEM" placeholder="6th Semester SGPA"><br><br>
+          <input type="number" class="color" id="SEVENTHSEM" placeholder="7th Semester SGPA"><br><br>
+          <input type="number" class="color" id="EIGHTTHSEM" placeholder="8th Semester SGPA"><br><br>
+        </div>
+           <button onclick="calculate()" class="pbtn1">Calculate your SGPA</button>
+           <p id="demo"></p>
+
+           <script>
+            function calculate() {
+                   
+                let FIRSTSEM = document.getElementById('FIRSTSEM').value;
+                let SECONDSEM =document.getElementById('SECONDSEM').value;
+                let THIRDSEM = document.getElementById('THIRDSEM').value;
+                let FOURTHSEM = document.getElementById('FOURTHSEM').value;
+                let FIFTHSEM = document.getElementById('FIFTHSEM').value;
+                let SIXTHSEM = document.getElementById('SIXTHSEM').value;
+                let SEVENTHSEM = document.getElementById('SEVENTHSEM').value;
+                let EIGHTTHSEM = document.getElementById('EIGHTTHSEM').value;
+                   
+                // const total = parseFloat(m1) + parseFloat(phy) + parseFloat(ele) + parseFloat(civ) + parseFloat(egdl) + parseFloat(phylab) + parseFloat(elelab) + parseFloat(egdllab);
+    
+                const cgpa = 20 * parseFloat(FIRSTSEM) + 20 * parseFloat(SECONDSEM) + 24 * parseFloat(THIRDSEM) + 24 * parseFloat(FOURTHSEM) + 25 * parseFloat(FIFTHSEM) + 24 * parseFloat(SIXTHSEM) + 20 * parseFloat(SEVENTHSEM) + 18 * parseFloat(EIGHTTHSEM);
+    
+                const sgpa2 = cgpa / 175;
+                document.getElementById("demo").innerHTML = sgpa2;
+            }
+    
+        </script>
+
+    
+</body>
+</html>

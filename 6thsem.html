@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA</title>
+    <link rel="stylesheet" href="physicscycle.css">
+</head>
+<body>
+    <a href="sgpa.html">
+    <button id="pbtn">Back</button>
+    </a>
+    <div>
+        <h1 class="phead">6th Semester(Enter obtained grade point)</h1>
+    </div>
+        <div id="pul">
+          <input type="number" class="color" id="SSC" placeholder="18XX61"><br><br>
+          <input type="number" class="color" id="CG" placeholder="18XX62"><br><br>
+          <input type="number" class="color" id="OHS" placeholder="18XX653"><br><br>
+          <input type="number" class="color" id="CC" placeholder="18XX643"><br><br>
+          <input type="number" class="color" id="WEB" placeholder="18XX63"><br><br>
+          <input type="number" class="color" id="SSCL" placeholder="18XXL66"><br><br>
+          <input type="number" class="color" id="CGL" placeholder="18XXL67"><br><br>
+          <input type="number" class="color" id="MAD" placeholder="18CSMPL68"><br><br>
+        </div>
+           <button onclick="calculate()" class="pbtn1">Calculate your SGPA</button>
+           <p id="demo"></p>
+
+           <script>
+            function calculate() {
+
+                let SSC = document.getElementById('SSC').value;
+                let CG = document.getElementById('CG').value;
+                let OHS = document.getElementById('OHS').value;
+                let CC = document.getElementById('CC').value;
+                let WEB = document.getElementById('WEB').value;
+                let SSCL = document.getElementById('SSCL').value;
+                let CGL = document.getElementById('CGL').value;
+                let MAD = document.getElementById('MAD').value;
+    
+                // const total = parseFloat(m1) + parseFloat(phy) + parseFloat(ele) + parseFloat(civ) + parseFloat(egdl) + parseFloat(phylab) + parseFloat(elelab) + parseFloat(egdllab);
+    
+                const sgpa = 4 * parseFloat(SSC) + 4 * parseFloat(CG) + 3 * parseFloat(OHS) + 3 * parseFloat(CC) + 4 * parseFloat(WEB) + 2 * parseFloat(SSCL) + 2 * parseFloat(CGL) + 2 * parseFloat(MAD);
+    
+                const sgpa2 = sgpa / 24;
+                document.getElementById("demo").innerHTML = sgpa2;
+            }
+    
+        </script>
+
+    
+</body>
+</html>

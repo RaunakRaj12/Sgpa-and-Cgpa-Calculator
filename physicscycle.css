@@ -1,0 +1,79 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px;
+}
+body{
+    background: url('lab3.jpg');
+    background-size: cover;
+    font-family: SinkinSans;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#pbtn{
+    background-color: rgb(166, 169, 113);
+    border: solid black;
+    width: 100px;
+    padding: 10px;
+    border-radius: 12px;
+    display: block;
+    margin-top: 10px;
+    position: fixed;
+}
+.phead{
+    text-align: center;
+    color: rgb(166, 169, 113);
+    padding: 30px;
+}
+#pul{
+    /* display: inline; */
+     text-align: center;
+    /* margin: 20px; */
+}
+input{
+    width: 400px;
+    border: 3px solid rgb(9, 1, 16);
+    padding: 10px;
+    background-color:rgb(195, 197, 162);
+    border-radius: 12px;
+
+}
+.pbtn1{
+    background-color: rgb(166, 169, 113);
+    border: solid black;
+    width: 400px;
+    padding: 10px;
+    border-radius: 12px;
+    display:block;
+     position: absolute; 
+     /* left: 33%; 
+     right: 33%; */
+     bottom: 10%; 
+}
+#demo{
+    text-align: center;
+    /* border: 2px solid red; */
+    display: block;
+    font-size: 2em;
+    color: white;
+}
+.color{
+    text-align: center;
+}
+#pbtn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    background-color: yellow;
+}
+.pbtn1:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    background-color: yellow;
+}
+.color:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    background-color: rgb(199, 199, 138);
+}

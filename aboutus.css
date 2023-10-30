@@ -1,0 +1,38 @@
+#table{
+    /* background-color: rgb(53, 40, 25); */
+    width: 600px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 250px;
+    /* text-align: center; */
+    
+    
+}
+#pbtn{
+    background-color: rgb(166, 169, 113);
+    border: solid black;
+    width: 100px;
+    padding: 10px;
+    border-radius: 12px;
+    display: block;
+    margin-top: 10px;
+    
+}
+#bbtn{
+    text-decoration: none;
+
+}
+#pbtn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    background-color: yellow;
+}
+body{
+    background-color: bisque;
+    /* width: 100%; */
+}
+tr:hover{
+    background-color: rgb(184, 158, 54);
+    cursor: pointer;
+    transform: scale(1.03);
+}
